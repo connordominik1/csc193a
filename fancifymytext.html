@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!-- Assignment 5 - Fun with JavaScript -->
+<!-- Programmed by Connor Dominik -->
+<!-- for CSC 193A at CSUS for Spring 2024 -->
+<!-- needs access to 'fancifymytext.js' in the same directory as this file. -->
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		<form>
+			<fieldset>
+				<legend>Text</legend>
+				<textarea name="textbox" id="multiLineTextbox" rows="4" cols="30">This is 4 rows by 30 columns.</textarea>
+			</fieldset>
+		</form>
+		<br>
+			
+		<!-- Your UI controls go here -->
+		<form>
+			<fieldset>
+				<legend>Fancify</legend>
+				<input type="radio" id="fancify" name="radio" value="FancyShmancy" onchange="fancifyFunction()">
+				<label for="fancify">Fancify</label>
+				<br>
+				<input type="radio" id="boringify" name="radio" value="BoringBetty" onchange="boringifyFunction()">
+				<label for="boringify">BoringBetty</label>
+				<br><br>
+				<button onclick="biggerButtonFunction()" type="button" id="biggerButton">Bigger!</button>
+				<br><br>
+				<button onclick="mooButtonFunction()" type="button" id="mooButton">Moo</button>
+			</fieldset>
+		<br>
+		</form>	
+		
+		
+	</body>
+</html>
